@@ -8,9 +8,7 @@ This is a **Java-based Admin Panel Web Application** developed using **Java Serv
 
 AdminPanelApp/ │── src/main/java/ │ ├── com.adminpanel.servlet/ │ │ ├── LoginServlet.java │ │ ├── LogoutServlet.java │ │ ├── UserManagementServlet.java │ ├── com.adminpanel.entity/ │ │ ├── Admin.java │ │ ├── User.java │ ├── com.adminpanel.dao/ │ │ ├── UserDAO.java │ ├── com.adminpanel.service/ │ │ ├── UserService.java │ ├── com.adminpanel.ejb/ │ │ ├── UserBean.java │ ├── com.adminpanel.rest/ │ │ ├── UserRestService.java │── WebContent/ │ ├── index.jsp │ ├── adminDashboard.jsp │ ├── registerUser.jsp │ ├── searchUser.jsp ├── META-INF/ │ ├── persistence.xml ├── web.xml ├── pom.xml
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -44,7 +42,7 @@ Edit
 
 ---
 
-## ⚙️ Setup Instructions
+
 
 ### 1. Clone the Repository
 ```bash
@@ -55,9 +53,7 @@ Choose "Import as Maven Project"
 Configure Tomcat or GlassFish as your runtime server
 
 3. Set Up MySQL Database
-sql
-Copy
-Edit
+
 CREATE DATABASE admin_panel;
 USE admin_panel;
 
@@ -76,9 +72,7 @@ CREATE TABLE user (
 4. Configure persistence.xml
 Update your MySQL username and password:
 
-xml
-Copy
-Edit
+
 <property name="javax.persistence.jdbc.user" value="root"/>
 <property name="javax.persistence.jdbc.password" value="yourpassword"/>
 5. Run the Project
@@ -89,9 +83,7 @@ Navigate to: http://localhost:8080/AdminPanelApp/
 🔒 Admin Credentials
 You can insert an admin record directly via MySQL:
 
-sql
-Copy
-Edit
+
 INSERT INTO admin (username, password) VALUES ('admin', 'admin123');
 
 
