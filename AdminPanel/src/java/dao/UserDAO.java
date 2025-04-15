@@ -8,7 +8,7 @@ public class UserDAO {
 
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/admin_panel";
     private static final String JDBC_USER = "root";
-    private static final String JDBC_PASS = "05129@jRajput";
+    private static final String JDBC_PASS = "yourpassword";
 
     static {
         try {
